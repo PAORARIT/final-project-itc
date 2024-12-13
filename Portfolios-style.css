@@ -1,0 +1,96 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 25px;
+  background-color: #1c567a;
+}
+
+.navbar {
+  background-color: #121e2c;
+  color: #fff;
+  padding: 20px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar a:hover {
+  background-color: #10111180;
+  color: #66a2a6;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2em;
+  text-shadow: 2px 2px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.portfolio-section {
+  padding: 20px;
+}
+
+.portfolio-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 90%;
+  height: 90%;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 2;
+}

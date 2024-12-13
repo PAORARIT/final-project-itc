@@ -1,0 +1,99 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 25px;
+  background-color: #1c567a;
+  color: white;
+}
+
+.navbar {
+  background-color: #121e2c;
+  color: #fff;
+  padding: 20px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar a:hover {
+  background-color: #10111180;
+  color: #66a2a6;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  padding-left: 2em;
+  color: white;
+}
+
+svg {
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+svg:hover {
+  transition: ease-in-out 0.3s;
+  transform: translateY(10.5px);
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.facebook:hover {
+  color: rgb(57, 161, 230);
+}
+
+.facebook-tooltip {
+  border: rgb(57, 161, 230) 1px solid;
+}
+
+.github:hover {
+  color: rgb(205, 125, 245);
+}
+
+.github-tooltip {
+  border: rgb(205, 125, 245) 1px solid;
+}
